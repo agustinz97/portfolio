@@ -1,13 +1,14 @@
 import React from 'react'
 
 import { Button } from '../../components/Buttons'
-import { Wrapper, Title, Subtitle, Text } from './styles'
+import { Wrapper, Text } from './styles'
+import { Title, Subtitle } from '../../components/Titles'
 
 export const Home = () => {
     return (
         <Wrapper>
-            <Title>¡Hola!</Title>
-            <Subtitle>¿Cómo puedo ayudarte?</Subtitle>
+            <Title text="¡Hola!" />
+            <Subtitle text="¿Cómo puedo ayudarte?" />
             <Text>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
                 repellendus dolor unde est tempore sequi, exercitationem animi,

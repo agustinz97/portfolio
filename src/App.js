@@ -5,6 +5,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
+import { Projects } from './pages/Projects'
 
 const Main = styled.main`
     width: 100%;
@@ -22,6 +23,7 @@ function App() {
 
                 <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route exact path="/projects" component={Projects} />
                 </Switch>
 
                 <Footer />

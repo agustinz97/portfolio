@@ -10,20 +10,18 @@ export const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media (min-width: 768px) {
-        align-items: flex-start;
-    }
 `
 
-export const Text = styled.p`
-    margin-bottom: 30px;
+export const ProjectsGrid = styled.div`
+    width: 100%;
 
-    font-size: 16px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 500px;
+    row-gap: 20px;
 
     @media (min-width: 768px) {
-        font-size: 24px;
-        text-align: left;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        column-gap: 30px;
     }
 `
