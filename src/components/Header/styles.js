@@ -10,7 +10,7 @@ export const HeaderStyled = styled.header`
 
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 
     position: relative;
 
@@ -66,6 +66,15 @@ export const HeaderStyled = styled.header`
                 }
             }
         }
+    }
+
+    .header_name {
+        font-size: 25px;
+        color: #1c1c1c;
+        text-decoration: none;
+        font-weight: normal;
+
+        margin-right: auto;
     }
 
     .header_btn {

@@ -10,8 +10,6 @@ const Main = styled.main`
     width: 100%;
     min-height: 100vh;
 
-    font-family: 'Lato';
-
     display: flex;
     flex-direction: column;
 `

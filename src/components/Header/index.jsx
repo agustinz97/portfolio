@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import { HeaderStyled } from './styles'
 
@@ -35,16 +36,16 @@ export const Header = () => {
                         <a href="/">Inicio</a>
                     </li>
                     <li>
-                        <a href="/">Proyectos</a>
+                        <a href="/projects">Proyectos</a>
                     </li>
                     <li>
-                        <a href="/">Sobre mi</a>
-                    </li>
-                    <li>
-                        <a href="/">Formación</a>
+                        <a href="/education">Formación</a>
                     </li>
                 </ul>
             </nav>
+            <Link to="/" className="header_name">
+                Agustín Zamar
+            </Link>
             <button className="header_btn" onClick={toggleMenu} ref={button}>
                 <span></span>
                 <span></span>
