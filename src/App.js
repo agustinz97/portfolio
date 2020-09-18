@@ -8,6 +8,9 @@ const Main = styled.main`
     min-height: 100vh;
 
     font-family: 'Lato';
+
+    display: flex;
+    flex-direction: column;
 `
 
 function App() {
