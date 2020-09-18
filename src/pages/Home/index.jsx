@@ -13,7 +13,7 @@ export const Home = () => {
                 repellendus dolor unde est tempore sequi, exercitationem animi,
                 placeat cum temporibus totam architecto fugiat at nihil.
             </Text>
-            <Button />
+            <Button type="black-outline" url="/projects" />
         </Wrapper>
     )
 }

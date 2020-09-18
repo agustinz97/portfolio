@@ -1,8 +1,10 @@
-import { darken } from 'polished'
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-const StyledButton = styled.button`
+const StyledButton = styled(({ tag, children, ...props }) =>
+    React.createElement(tag, props, children)
+)`
     width: 180px;
     height: 40px;
 
@@ -15,6 +17,11 @@ const StyledButton = styled.button`
 
     font-size: 18px;
     color: #1c1c1c;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
         background-color: #1c1c1c;
@@ -29,6 +36,15 @@ const StyledButton = styled.button`
     }
 `
 
-export const Button = ({ type }) => {
-    return <StyledButton>Conocer más</StyledButton>
+export const Button = ({ type, url, target = '', external = false }) => {
+    return (
+        <StyledButton
+            to={url}
+            href={url}
+            tag={external ? 'a' : Link}
+            target={target}
+        >
+            Conocer más
+        </StyledButton>
+    )
 }
