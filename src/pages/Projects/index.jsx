@@ -4,30 +4,20 @@ import { Wrapper, ProjectsGrid } from './styles'
 import { Subtitle } from '../../components/Titles'
 import { Project } from '../../components/Project'
 
+import tabataImage from '../../assets/img/tabata-timer.png'
+
 export const Projects = props => {
     return (
         <Wrapper>
             <Subtitle text="Mis proyectos" />
             <ProjectsGrid>
                 <Project
-                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis eaque laudantium enim in magnam?"
+                    text="Aplicacion web para crear rutinas de ejercicio, con cronometro y otras funcionalidades"
                     type="react"
-                    image="https://lorempixel.com/800/900"
-                />
-                <Project
-                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis eaque laudantium enim in magnam?"
-                    type="laravel"
-                    image="https://lorempixel.com/800/700"
-                />
-                <Project
-                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis eaque laudantium enim in magnam?"
-                    type="php"
-                    image="https://lorempixel.com/600/900"
-                />
-                <Project
-                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis eaque laudantium enim in magnam?"
-                    type="js"
-                    image="https://lorempixel.com/500/500"
+                    image={tabataImage}
+                    tags={['react', 'js', 'css', 'html']}
+                    url="https://tabata-timer.vercel.app"
+                    name="Tabata Timer"
                 />
             </ProjectsGrid>
         </Wrapper>
