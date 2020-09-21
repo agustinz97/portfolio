@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { readableColor } from 'polished'
 
 const COLORS = {
     react: '#61dafb',
@@ -77,9 +78,8 @@ const Tag = styled.p`
     width: max-content;
     padding: 4px 8px;
 
-    color: #fff;
+    color: ${props => readableColor(props.color)};
     font-size: 16px;
-    font-weight: bold;
 
     background-color: ${props => props.color};
     border-radius: 6px;
