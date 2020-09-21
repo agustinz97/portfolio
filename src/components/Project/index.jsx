@@ -8,6 +8,7 @@ const COLORS = {
     laravel: '#f72c1f',
     css: '#0091ca',
     html: '#e8602a',
+    mysql: '#005e86',
 }
 
 const Container = styled.a`

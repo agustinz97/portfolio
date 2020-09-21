@@ -23,9 +23,11 @@ const StyledButton = styled(({ tag, children, ...props }) =>
     justify-content: center;
     align-items: center;
 
-    &:hover {
-        background-color: #1c1c1c;
-        color: #f2f2f2;
+    @media (hover: hover) {
+        &:hover {
+            background-color: #1c1c1c;
+            color: #f2f2f2;
+        }
     }
 
     @media (min-width: 768px) {
@@ -36,15 +38,23 @@ const StyledButton = styled(({ tag, children, ...props }) =>
     }
 `
 
-export const Button = ({ type, url, target = '', external = false }) => {
+export const Button = ({
+    type,
+    url,
+    target = '',
+    external = false,
+    text,
+    download,
+}) => {
     return (
         <StyledButton
             to={url}
             href={url}
-            tag={external ? 'a' : Link}
-            target={target}
+            download={download}
+            tag={url ? (external ? 'a' : Link) : 'button'}
+            target={target || ''}
         >
-            Conocer más
+            {text}
         </StyledButton>
     )
 }
