@@ -16,7 +16,7 @@ const Container = styled.a`
     width: 100%;
     height: 100%;
 
-    border-bottom: 8px solid ${props => props.color && props.color};
+    border-bottom: 8px solid #1c1c1c;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -78,10 +78,10 @@ const Tag = styled.p`
     width: max-content;
     padding: 4px 8px;
 
-    color: ${props => readableColor(props.color)};
+    color: #fff;
     font-size: 16px;
 
-    background-color: ${props => props.color};
+    background-color: #333;
     border-radius: 6px;
 
     &:not(:last-child) {
@@ -91,14 +91,12 @@ const Tag = styled.p`
 
 export const Project = props => {
     return (
-        <Container
-            color={COLORS[props.type]}
-            href={props.url}
-            rel="noopener norreferrer"
-            target="_blank"
-        >
+        <Container href={props.url} rel="noopener norreferrer" target="_blank">
             <ImageContainer>
-                <Image src={props.image} />
+                <Image
+                    src={props.image}
+                    alt={`Portada del proyecto ${props.name}`}
+                />
             </ImageContainer>
             <Description>
                 <Title>{props.name}</Title>
@@ -106,11 +104,7 @@ export const Project = props => {
             </Description>
             <Tags>
                 {props.tags.map((tag, i) => {
-                    return (
-                        <Tag key={i} color={COLORS[tag]}>
-                            {tag}
-                        </Tag>
-                    )
+                    return <Tag key={i}>{tag}</Tag>
                 })}
             </Tags>
         </Container>

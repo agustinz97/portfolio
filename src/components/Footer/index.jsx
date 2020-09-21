@@ -60,6 +60,7 @@ export const Footer = () => {
                     </a>
                 </li>
             </ul>
+
             {/* <p> &copy; 2020 Agustín Zamar</p> */}
         </FooterStyled>
     )
