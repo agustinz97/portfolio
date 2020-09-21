@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom'
 const StyledButton = styled(({ tag, children, ...props }) =>
     React.createElement(tag, props, children)
 )`
-    width: 180px;
-    height: 40px;
+    padding: 4px 8px;
 
     background: none;
     border: 2px solid #1c1c1c;
@@ -18,6 +17,7 @@ const StyledButton = styled(({ tag, children, ...props }) =>
     font-size: 18px;
     color: #1c1c1c;
     text-decoration: none;
+    text-align: center;
 
     display: flex;
     justify-content: center;
@@ -31,9 +31,6 @@ const StyledButton = styled(({ tag, children, ...props }) =>
     }
 
     @media (min-width: 768px) {
-        width: 220px;
-        height: 50px;
-
         font-size: 24px;
     }
 `
