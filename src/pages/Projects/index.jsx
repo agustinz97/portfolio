@@ -4,7 +4,7 @@ import { Wrapper, ProjectsGrid } from './styles'
 import { Subtitle } from '../../components/Titles'
 import { Project } from '../../components/Project'
 
-import { PROJECTS } from '../../projects'
+import { PROJECTS } from '../../api/projects'
 
 export const Projects = props => {
     return (

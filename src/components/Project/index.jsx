@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { readableColor } from 'polished'
 
-const COLORS = {
+/* const COLORS = {
     react: '#61dafb',
     js: '#efd81d',
     php: '#7377ad',
@@ -10,7 +9,7 @@ const COLORS = {
     css: '#0091ca',
     html: '#e8602a',
     mysql: '#005e86',
-}
+} */
 
 const Container = styled.a`
     width: 100%;
@@ -44,14 +43,22 @@ const Container = styled.a`
 
 const ImageContainer = styled.div`
     width: 100%;
-    height: 60%;
+    height: 0;
+    padding: 56.25% 0 0 0;
 
-    display: flex;
+    display: block;
+
+    overflow: hidden;
+
+    position: relative;
 `
 
 const Image = styled.img`
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
 `
 
 const Title = styled.h3`

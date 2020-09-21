@@ -1,6 +1,6 @@
-import tabataImage from './assets/img/tabata-timer.png'
-import rockPapreScissorsImage from './assets/img/rock-paper-scissors.png'
-import laFabricaImage from './assets/img/la-fabrica.png'
+import tabataImage from '../assets/img/tabata-timer.png'
+import rockPapreScissorsImage from '../assets/img/rock-paper-scissors.png'
+import laFabricaImage from '../assets/img/la-fabrica.png'
 
 export const PROJECTS = [
     {

@@ -17,7 +17,6 @@ export const ProjectsGrid = styled.div`
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 500px;
     row-gap: 20px;
 
     @media (min-width: 768px) {
