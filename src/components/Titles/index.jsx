@@ -16,7 +16,7 @@ const TitleStyled = styled.h1`
 const SubtitleStyled = styled.h2`
     margin-bottom: 30px;
 
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1em;
     text-align: center;
 

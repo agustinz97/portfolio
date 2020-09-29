@@ -11,10 +11,10 @@ export const Projects = props => {
         <Wrapper>
             <Subtitle text="Mis proyectos" />
             <ProjectsGrid>
-                {PROJECTS.map(project => {
+                {PROJECTS.map((project, i) => {
                     return (
                         <Project
-                            type={project.type}
+                            key={i}
                             tags={project.tags}
                             url={project.url}
                             image={project.image}

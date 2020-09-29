@@ -15,8 +15,6 @@ export const Header = () => {
 
     const closeOnBodyClick = () => {
         document.addEventListener('click', evt => {
-            console.log(evt.target)
-
             if (
                 !menu.current.contains(evt.target) &&
                 !button.current.contains(evt.target)

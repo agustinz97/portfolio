@@ -6,6 +6,7 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
 import { Projects } from './pages/Projects'
+import { Education } from './pages/Education'
 
 const Main = styled.main`
     width: 100%;
@@ -13,6 +14,8 @@ const Main = styled.main`
 
     display: flex;
     flex-direction: column;
+
+    background-color: #ddd;
 `
 
 function App() {
@@ -24,6 +27,7 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/projects" component={Projects} />
+                    <Route exact path="/education" component={Education} />
                 </Switch>
 
                 <Footer />

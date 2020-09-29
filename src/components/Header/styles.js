@@ -6,7 +6,8 @@ export const HeaderStyled = styled.header`
     height: 60px;
     padding: 0.5rem 1rem;
 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 
     display: flex;
     align-items: center;
@@ -29,6 +30,7 @@ export const HeaderStyled = styled.header`
         top: 0;
         left: 0;
         transform: ${props => !props.active && 'translateX(-100%)'};
+        z-index: 99999999;
 
         background-color: #1c1c1c;
         list-style: none;
@@ -91,7 +93,7 @@ export const HeaderStyled = styled.header`
         justify-content: space-around;
         align-items: center;
 
-        z-index: 99;
+        z-index: 999999999;
 
         position: relative;
 
