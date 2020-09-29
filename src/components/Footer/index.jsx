@@ -19,6 +19,7 @@ export const Footer = () => {
                         href="https://facebook.com/agustinzc"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="facebook"
                     >
                         <FontAwesomeIcon icon={faFacebookF} version="fab" />
                     </a>
