@@ -28,6 +28,7 @@ export const Footer = () => {
                         href="https://instagram.com/_agustinzc"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="instagram"
                     >
                         <FontAwesomeIcon icon={faInstagram} version="fab" />
                     </a>
@@ -37,6 +38,7 @@ export const Footer = () => {
                         href="https://twitter.com/_agustinzc"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="twitter"
                     >
                         <FontAwesomeIcon icon={faTwitter} version="fab" />
                     </a>
@@ -46,6 +48,7 @@ export const Footer = () => {
                         href="https://github.com/agustinz97"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="github"
                     >
                         <FontAwesomeIcon icon={faGithub} version="fab" />
                     </a>
@@ -55,6 +58,7 @@ export const Footer = () => {
                         href="https://www.linkedin.com/in/agustinzamar"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="linkedin"
                     >
                         <FontAwesomeIcon icon={faLinkedin} version="fab" />
                     </a>

@@ -44,7 +44,12 @@ export const Header = () => {
             <Link to="/" className="header_name">
                 Agustín Zamar
             </Link>
-            <button className="header_btn" onClick={toggleMenu} ref={button}>
+            <button
+                className="header_btn"
+                onClick={toggleMenu}
+                ref={button}
+                aria-label="boton de menú"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
